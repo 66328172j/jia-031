@@ -1,5 +1,5 @@
--- ncare 长者入住档案种子（F5 床边记录单建档/联动验收依赖：id=0 在住、id=1 已退住）
--- 阈值 2/6/10 与 spec_ncare F5 calc band pairs=[(2,2),(6,3),(10,4),(16,4)] 同口径（等于上限取高一档）
+-- ncare 长者入住档案种子（床边记录单建档/联动依赖：id=0 在住、id=1 已退住）
+-- 阈值 2/6/10 与护理等级档位划分同口径（等于上限取高一档）
 INSERT INTO t_care_resident (id, site_no, site_name, site_type, road_name, th1_max, th2_max, th3_max, status, del_flag, create_by, create_time)
 VALUES
  (0, 'HZ00', '周桂兰', '半失能', '一楼东区护理分区', 2.00, 6.00, 10.00, 0, 0, 'seed', NOW()),
